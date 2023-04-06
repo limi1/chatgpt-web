@@ -1,9 +1,9 @@
 {
   "name": "chatgpt-web",
-  "version": "2.10.9",
+  "version": "0.0.1",
   "private": false,
   "description": "ChatGPT Web",
-  "author": "ChenZhaoYu <chenzhaoyu1994@gmail.com>",
+  "author": "DuJuan <13798004335@163.com>",
   "keywords": [
     "chatgpt-web",
     "chatgpt",
@@ -18,8 +18,8 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "bootstrap": "pnpm install && pnpm run common:prepare",
-    "common:cleanup": "rimraf node_modules && rimraf pnpm-lock.yaml",
+    "bootstrap": "npm install && npm run common:prepare",
+    "common:cleanup": "rimraf node_modules && rimraf npm-lock.yaml",
     "common:prepare": "husky install"
   },
   "dependencies": {
@@ -65,7 +65,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx,vue}": [
-      "pnpm lint:fix"
+      "npm lint:fix"
     ]
   }
 }
